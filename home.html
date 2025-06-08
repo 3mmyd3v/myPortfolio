@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="portfolio.css">
+    <link rel="stylesheet" href="about.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/8d49b43b31.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="body">
+        <div class="bg-video">
+            <video src="homebgc.mp4" class="bg-video" autoplay loop muted></video>
+
+        </div>
+        <div class="container">
+            <div class="header">
+                <h1>Porfolio<span class="dot">.</span></h1>
+                <nav>
+                    <ul>
+                        <li><a class="ul" href="/home.html">Home</a></li>
+                        <li><a class="ul" href="#about">About</a></li>
+                        <li><a class="ul" href="#works">Works</a></li>
+                        <li><a class="ul" href="#services">Services</a></li>
+                    </ul>
+                    <div class="contact">
+                        <p class="contactText">
+                            <a href="/" class="contactText">Contact</a>
+                        </p>
+
+                    </div>
+                    <div class="menuIcon">
+                        <i class="fa-solid fa-bars fa-xl"  id="menuIconstyle"></i>
+                    </div>
+                </nav>
+            </div>
+            <div class="bodyHome">
+                <h1 class="hello">Hello!</h1>
+                <h1 class="name">I'm <span class="textanimation"></span></h1>
+                <p class="description">I'm a passionate web developer and creaive web desiner who transforms ideas into
+                    beautifully crafted digital design. To know more me, Check About me.</p>
+                <div class="twoButton">
+                    <div class="button">
+                        <p>More About me</p>
+                    </div>
+                    <a href="" class="github"> <i class="fa-brands fa-github" id="github_icon"></i></a>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        var typed = new Typed(".textanimation", {
+            strings: ["Ayetan Emmanuel.", "a Web Developer.", "a Web Designer."],
+            typeSpeed: 70,
+            backSpeed: 60,
+            loop: true
+        });
+    </script>
+
+    <!-- <div class="about" id="about">
+            <div class="container">
+                <div class="navBAr">
+
+                </div>
+                <div class="aboutBody">
+                    <h1 class="aboutText">About me</h1>
+
+                    <img src="4.jpg" alt="">
+                </div>
+            </div>
+        </div> -->
+
+</body>
+
+</html>
