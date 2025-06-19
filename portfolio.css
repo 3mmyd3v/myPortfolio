@@ -5,17 +5,19 @@
     padding: 0;
     user-select: none;
     -webkit-tap-highlight: rgba(255, 255, 255, 0);
+    overflow-x: hidden;
 }
 
 body {
     font-family: 'Poppins', sans-serif;
+
 }
 
 .body {
-    
-    
+    width: 100vw;
+    height: 100vh;
 }
- 
+
 .bg-video {
     position: absolute;
     top: 0;
@@ -25,6 +27,7 @@ body {
     object-fit: cover;
     z-index: -1;
 }
+
 .container {
     /* margin-right: 85px;
     margin-left: 85px; */
@@ -37,7 +40,7 @@ body {
 
 .header {
     display: flex;
-    
+
     height: 80px;
     align-items: center;
     justify-content: space-between;
@@ -93,7 +96,7 @@ a.ul:hover {
 
 .ul {
     font-size: 14px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-weight: 600;
 }
 
@@ -117,11 +120,17 @@ a {
     text-decoration: none;
     color: white;
     font-family: 'Poppins', sans-serif;
-        font-weight: 900;
-        letter-spacing: 0.2rem;
+    letter-spacing: 0.2rem;
 }
 
+a,
+.abouttext {
+    letter-spacing: 0;
+}
 
+.myWorks {
+    color: #006fBE;
+}
 
 .bodyHome {
     display: flex;
@@ -174,7 +183,8 @@ p.p {
     font-family: 'Poppins', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.twoButton{
+
+.twoButton {
     display: flex;
 
 }
@@ -190,7 +200,8 @@ p.p {
     color: white;
     transition: .4s;
 }
-.button p{
+
+.button p {
     font-size: 14px;
 
     font-family: 'Poppins', Tahoma, Geneva, Verdana, sans-serif;
@@ -202,7 +213,7 @@ p.p {
     transition: .4s;
 }
 
-#github_icon{
+#github_icon {
     font-size: 30px;
     color: rgb(201, 188, 188);
     cursor: pointer;
@@ -214,32 +225,181 @@ p.p {
     height: 100vh;
 }
 
-.body{
- color: white;
+.body {
+    color: white;
 }
 
 .menuIcon {
     margin-left: 50px;
+    display: none;
+    justify-content: center;
+    align-items: center;
 }
 
-#menuIconstyle{
+#menuIconstyle {
     color: #fff;
 }
 
-@media screen and (max-width:1200px){
-    ul{
+@media screen and (max-width:1200px) {
+    ul {
         display: none;
     }
+
+        .menuIcon {
+            display: flex
+        }
 }
 
 @media screen and (max-width:600px) {
     .contact {
         display: none;
     }
+
+    .menuIcon {
+        display: flex;
+    }
 }
 
-@media screen and (max-width:0px) {
-    ul {
-        display: none;
+
+@media screen and (max-width:750px) {
+
+    .header,
+    .bodyHome {
+        padding-left: 70px;
+        padding-right: 70px;
     }
+}
+
+@media screen and (max-width:500px) {
+
+    .header,
+    .bodyHome {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}
+
+@media screen and (max-width:1000px) {
+
+    .hello {
+        font-size: 40px;
+    }
+
+    .name {
+        font-size: 50px;
+    }
+
+    .description{
+        font-size: 13px;
+    }
+}
+@media screen and (max-width:750px) {
+
+    .hello {
+        font-size: 30px;
+    }
+
+    .name {
+        font-size: 45px;
+    }
+
+    .description {
+        width: 500px;
+        font-size: 13px;
+    }
+        .header,
+        .bodyHome {
+            padding-left: 40px;
+            padding-right: 40px;
+        }
+}
+
+@media screen and (max-width:630px) {
+
+    .hello {
+        font-size: 30px;
+    }
+
+    .name {
+        font-size: 45px;
+    }
+
+    .description {
+        width: 450px;
+        font-size: 12px;
+    }
+}
+
+
+@media screen and (max-width:460px) {
+
+    .hello {
+        font-size: 30px;
+    }
+
+    .name {
+        font-size: 40px;
+    }
+
+    .description {
+        width: 350px;
+        font-size: 11px;
+    }
+
+        .header,
+        .bodyHome {
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+
+
+}
+
+@media screen and (max-width:400px) {
+
+    .hello {
+        font-size: 30px;
+    }
+
+    .name {
+        font-size: 40px;
+    }
+
+    .description {
+        width: 350px;
+        font-size: 11px;
+        flex-wrap: wrap;
+    }
+
+    .header,
+    .bodyHome {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+
+}
+
+@media screen and (max-width:380px) {
+
+    .hello {
+        font-size: 27px;
+    }
+
+    .name {
+        font-size: 37px;
+    }
+
+    .description {
+        width: 300px;
+        font-size: 10px;
+    }
+
+    .header,
+    .bodyHome {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+
 }
